@@ -44,31 +44,74 @@
 			</div>
 		</div>
 	</nav>
-
+    <!-- fin nav -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+      <!-- fin carousel -->
    <header class="container ">
         <div class="row">
             <h1 class="display-1">Cours SQL - Accueil</h1>
             <p class="lead">...</p>
         </div>
+        <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Menu lattéral</button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" 
+                href="#introduction">01/Introduction</a></li>
+                <li class="nav-item"><a class="nav-link "
+                    href="#modelisation">02/</a>02/Modélisation</li>
+                    <li class="nav-item"><a class="nav-link " 
+                        href="#tables">03/Tables</a></li>
+                        <li class="nav-item"><a class="nav-link " 
+                            href="#colonne">04/Colonne ou champs</a></li>
+                
+
+    </ul>
+  </div>
+</div>
     </header>
 
     <section class="container mb-4 ">
-        <div class="col-12 col-md-6 col-lg-4">
-            <h2>1/My SQL</h2>
-            <ul>
-                <li>My SQL peut s'utiliser en ligne de commande (Shell,Bash,CMDR et le terminal sur Mac ou Linux,ou avec une autre interface graphique comme phpMyAdmin</li>
-                <li>Pour se connecter en ligne de commande on utilise <code>my sql - u-utilisateur-p</code></li>
-                <li class="bg-danger">Attention:Il faut penser à mettre le nom d'utilisateur spécifique au serveur ; sur le PC en local l'utilisateur est : root qui signifie : 'racine'</li>
-                <li>En local,sur PC il n'y a pas de mot de passe,sur Mac le mdp est 'root'</li>
-                <li>En ligne chaque BBD aura son utilisateur propre et son mot de passe propre</li>
-            </ul>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <h2>2/SGBDR ou SGBD</h2>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <h2>3/En résumé</h2>
-        </div>
+      <div class="row">
+          <h2 id="introduction">I/Introduction</h2>
+            <div class="col-12 col-md-6 col-lg-4">
+                <h2>1/My SQL</h2>
+                <ul>
+                    <li>My SQL peut s'utiliser en ligne de commande (Shell,Bash,CMDR et le terminal sur Mac ou Linux,ou avec une autre interface graphique comme phpMyAdmin</li>
+                    <li>Pour se connecter en ligne de commande on utilise <code>my sql - u-utilisateur-p</code></li>
+                    <li class="bg-danger">Attention:Il faut penser à mettre le nom d'utilisateur spécifique au serveur ; sur le PC en local l'utilisateur est : root qui signifie : 'racine'</li>
+                    <li>En local,sur PC il n'y a pas de mot de passe,sur Mac le mdp est 'root'</li>
+                    <li>En ligne chaque BBD aura son utilisateur propre et son mot de passe propre</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <h2>2/SGBDR ou SGBD</h2>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <h2>3/En résumé</h2>
+            </div>
+      </div>
+      <!-- fin row -->
+      <div class="row">
+          <h2>II/Modélisation</h2>
+      </div>
     </section>
 
            <!-- Optional JavaScript -->
