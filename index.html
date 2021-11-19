@@ -18,43 +18,71 @@
    
 </head>
 <body>
-    <nav class="navbar navbar-light" style="background-color:mistyrose ;">
-		<div class="container-fluid">
-            <a class="navbar-brand" href="../coursSQL/index.html">SQL/Home</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item"><a class="nav-link" 
-							href="../coursSQL/01_requetes.html">01/Requetes</a></li>
-                            <li class="nav-item"><a class="nav-link "
-                                href="../coursSQL/02_requetes.html">02/Requetes</a></li>
-                                <li class="nav-item"><a class="nav-link " 
-                                    href="../coursSQL/03_requetes_imbriquees.html">03/Requetes Imbriquées</a></li>
-                                    <li class="nav-item"><a class="nav-link " 
-                                        href="../coursSQL/04_jointure.html">04/Jointure</a></li>
-							
-
-				</ul>
-				<form class="d-flex">
-					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-success" type="submit">Search</button>
-				</form>
-			</div>
-		</div>
-	</nav>
+  <nav class="navbar navbar-light  fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">SQL</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Index</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Introduction
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="#introduction">Introduction</a></li>
+                <li><a class="dropdown-item" href="#modelisation">Modélisation d'une BDD</a></li>
+                <li><a class="dropdown-item" href="#table">Les tables</a></li>
+                <li><a class="dropdown-item" href="#colonne">Les colonnes ou les champs</a></li>
+                <li><a class="dropdown-item" href="#donnees">Les types de données</a></li>
+                <li><a class="dropdown-item" href="#pk">Type de données PK AI pour les ID</a></li>
+                <li><a class="dropdown-item" href="#cardinalite">Les cardinalités</a></li>
+                <li><a class="dropdown-item" href="#jointure">Table de jointure</a></li>
+                <li><a class="dropdown-item" href="#fk">Clefs étrangères ou Fk</a></li>
+                <li><a class="dropdown-item" href="#enregristrement">Les enregistrements</a></li>
+                <li><a class="dropdown-item" href="#bdd">Interroger la BDD</a></li>
+             
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../coursSQL/01_requetes.html">01/Requetes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../coursSQL/02_requetes.html">02/Requetes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../coursSQL/03_requetes_imbriquees.html">03/Requetes imbriquées</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../coursSQL/04_jointure.html">04/Jointure</a>
+            </li>
+         
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
     <!-- fin nav -->
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="img/unnamed.jpg" class="d-block w-100" alt="sql">
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="img/unnamed2.jpg" class="d-block w-100" alt="sqlmediaa">
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="img/php.jpg" class="d-block w-100" alt="php">
           </div>
         </div>
       </div>
@@ -64,28 +92,7 @@
             <h1 class="display-1">Cours SQL - Accueil</h1>
             <p class="lead">...</p>
         </div>
-        <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Menu lattéral</button>
 
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-  <div class="offcanvas-header">
-    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" 
-                href="#introduction">01/Introduction</a></li>
-                <li class="nav-item"><a class="nav-link "
-                    href="#modelisation">02/</a>02/Modélisation</li>
-                    <li class="nav-item"><a class="nav-link " 
-                        href="#tables">03/Tables</a></li>
-                        <li class="nav-item"><a class="nav-link " 
-                            href="#colonne">04/Colonne ou champs</a></li>
-                
-
-    </ul>
-  </div>
-</div>
     </header>
 
     <section class="container mb-4 ">
@@ -110,7 +117,7 @@
       </div>
       <!-- fin row -->
       <div class="row">
-          <h2>II/Modélisation</h2>
+          <h2 id="modelisation">II/Modélisation</h2>
       </div>
     </section>
 
